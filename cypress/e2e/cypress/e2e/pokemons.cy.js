@@ -2,8 +2,8 @@ describe('E2E pokemons', function () {
 
     it('Полный путь покупки аватара', function () {
          cy.visit('https://pokemonbattle.ru/login');
-         cy.get(':nth-child(1) > .auth__input').type('hondaclub124@yandex.ru');
-         cy.get('#password').type('Eldarsta20000');
+         cy.get(':nth-child(1) > .auth__input').type('USER_login');
+         cy.get('#password').type('USER_password');
          cy.get('.auth__button').click();
          cy.wait(1500);
 
